@@ -2,7 +2,7 @@
 
 Pakistan Crop Protection Association website (Next.js 15, React 19, TypeScript, plain CSS). Built from the 14-page redesign proposal PDF: light-green hero band, dark-green titles, rounded cards, and a left section sidebar on inner pages.
 
-An opening logo film plays once per browser session on the home page (Skip button / Esc to skip; skipped for reduced-motion visitors).
+Subtle motion throughout (scroll reveals, count-up figures, hover lifts, hero entrance; all switched off for visitors who prefer reduced motion). An opening logo film plays once per browser session on the home page (Skip button / Esc to skip; skipped for reduced-motion visitors).
 
 ## Run
 
