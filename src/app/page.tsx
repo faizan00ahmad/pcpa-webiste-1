@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { Icon } from "@/components/Icon";
 import { GalleryStrip } from "@/components/GalleryStrip";
-import { IntroVideo } from "@/components/IntroVideo";
 import { TileLink, PersonCard } from "@/components/blocks";
 import { documents } from "@/content/documents";
 import { keyDates } from "@/content/events";
@@ -15,7 +14,6 @@ export default function Home() {
   const latest = documents.filter((d) => d.status === "Current").slice(0, 5);
   return (
     <>
-      <IntroVideo />
       <section className="pc-hero">
         <div className="pc-wrap pc-hero-in">
           <div className="pc-hero-copy">
