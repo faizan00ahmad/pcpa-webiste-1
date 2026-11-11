@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Icon } from "@/components/Icon";
+import { GalleryStrip } from "@/components/GalleryStrip";
 import { IntroVideo } from "@/components/IntroVideo";
 import { TileLink, PersonCard } from "@/components/blocks";
 import { documents } from "@/content/documents";
@@ -32,8 +33,16 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="pc-hero-photo">
-            <Image src={slides[0]} alt="PCPA members at an Association event" width={900} height={600} priority sizes="(max-width:900px) 100vw, 520px" />
+          <div className="pc-hero-photo pc-collage">
+            <div className="pc-collage-a">
+              <Image src="/images/farm/tractor-in-mustard-field.jpg" alt="A tractor on a track between flowering mustard fields at sunset" fill priority sizes="(max-width:900px) 50vw, 280px" />
+            </div>
+            <div className="pc-collage-b">
+              <Image src="/images/farm/harvest-at-sunset.jpg" alt="Farmers handling straw beside a thresher at sunset" fill priority sizes="(max-width:900px) 50vw, 240px" />
+            </div>
+            <div className="pc-collage-c">
+              <Image src="/images/farm/threshing-in-dust.jpg" alt="Workers threshing grain in the morning dust" fill priority sizes="(max-width:900px) 50vw, 240px" />
+            </div>
           </div>
         </div>
       </section>
@@ -124,6 +133,18 @@ export default function Home() {
       </section>
 
       <section className="pc-section pc-section-alt">
+        <div className="pc-wrap">
+          <div className="pc-section-head">
+            <h2 className="pc-h2">Photo gallery</h2>
+            <Link href="/gallery" className="pc-link">
+              View all photos <Icon name="arrow" size={14} />
+            </Link>
+          </div>
+          <GalleryStrip />
+        </div>
+      </section>
+
+      <section className="pc-section">
         <div className="pc-wrap">
           <h2 className="pc-h2">News</h2>
           <div className="pc-grid pc-grid-2">

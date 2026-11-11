@@ -27,8 +27,7 @@ html[data-scrolled] .pc-header { box-shadow: 0 8px 26px rgba(8, 44, 24, 0.12); }
 .pc-hero-copy > :nth-child(2) { animation-delay: 0.08s; }
 .pc-hero-copy > :nth-child(3) { animation-delay: 0.16s; }
 .pc-hero-copy > :nth-child(4) { animation-delay: 0.24s; }
-.pc-hero-photo { animation: pc-rise 1s 0.2s cubic-bezier(0.2, 0.7, 0.2, 1) backwards; }
-.pc-hero-photo img { animation: pc-float 8s 1.2s ease-in-out infinite; }
+.pc-hero-photo { animation: pc-rise 1s 0.2s cubic-bezier(0.2, 0.7, 0.2, 1) backwards, pc-float 8s 1.4s ease-in-out infinite; }
 
 /* page banner entrance */
 .pc-banner h1, .pc-banner .pc-crumbs { animation: pc-rise 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) backwards; }
@@ -71,7 +70,7 @@ html[data-scrolled] .pc-header { box-shadow: 0 8px 26px rgba(8, 44, 24, 0.12); }
 .pc-facts strong, .pc-stat strong { font-variant-numeric: tabular-nums; }
 
 @media (prefers-reduced-motion: reduce) {
-  .pc-page, .pc-hero::before, .pc-hero::after, .pc-hero-copy > *, .pc-hero-photo, .pc-hero-photo img, .pc-banner h1, .pc-banner .pc-crumbs, .pc-btn-primary { animation: none !important; }
+  .pc-page, .pc-hero::before, .pc-hero::after, .pc-hero-copy > *, .pc-hero-photo, .pc-banner h1, .pc-banner .pc-crumbs, .pc-btn-primary { animation: none !important; }
   .js .pc-rv { opacity: 1; transform: none; }
   body::after { display: none; }
 }
