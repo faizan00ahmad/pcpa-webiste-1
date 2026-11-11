@@ -36,10 +36,10 @@ export default function Home() {
               <Image src="/images/farm/tractor-in-mustard-field.jpg" alt="A tractor on a track between flowering mustard fields at sunset" fill priority sizes="(max-width:900px) 50vw, 280px" />
             </div>
             <div className="pc-collage-b">
-              <Image src="/images/farm/harvest-at-sunset.jpg" alt="Farmers handling straw beside a thresher at sunset" fill priority sizes="(max-width:900px) 50vw, 240px" />
+              <Image src="/images/farm/tractor-spraying-at-sunset.jpg" alt="A red tractor spraying a crop at sunset under a dramatic sky" fill priority sizes="(max-width:900px) 50vw, 240px" />
             </div>
             <div className="pc-collage-c">
-              <Image src="/images/farm/threshing-in-dust.jpg" alt="Workers threshing grain in the morning dust" fill priority sizes="(max-width:900px) 50vw, 240px" />
+              <Image src="/images/farm/combine-harvesting-wheat.jpg" alt="A combine harvester working a golden wheat field under a blue sky" fill priority sizes="(max-width:900px) 50vw, 240px" />
             </div>
           </div>
         </div>

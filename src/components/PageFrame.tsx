@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
+import { bannerFor, type BannerKey } from "@/content/banners";
 import { sections } from "@/content/site";
 
 /** Inner-page frame: breadcrumb, green title banner and (optionally) the section sidebar. */
@@ -7,18 +9,24 @@ export function PageFrame({
   subtitle,
   section,
   current,
+  banner,
   children,
 }: {
   title: string;
   subtitle?: string;
   section?: keyof typeof sections;
   current?: string;
+  banner?: BannerKey;
   children: React.ReactNode;
 }) {
   const sec = section ? sections[section] : undefined;
+  const b = bannerFor({ banner, section, current });
   return (
     <>
       <section className="pc-banner">
+        <div className="pc-banner-photo" aria-hidden>
+          <Image src={b.src} alt="" fill loading="lazy" sizes="520px" style={{ objectPosition: b.pos }} />
+        </div>
         <div className="pc-wrap">
           <nav className="pc-crumbs" aria-label="Breadcrumb">
             <Link href="/">Home</Link>
